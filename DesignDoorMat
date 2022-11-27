@@ -1,0 +1,24 @@
+h, w = map(int, input().split())
+######################################
+
+# Upper part.
+I =(h-1)/2
+
+for i in range(int(I)):
+    if h % 2 != 0 :
+
+        print(((".|.")*((i*2)+1)).center(w,"-"))
+
+# Center part.
+
+wel = "WELCOME"
+
+print(wel.center(w,"-"))
+
+# Lower part.
+I = int((h-1)/2)
+
+for i in range(int(I)):
+    if h % 2 != 0 :
+
+        print(((".|.")*(i*-2+(h-2))).center(w,"-"))
